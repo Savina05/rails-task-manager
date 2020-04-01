@@ -1,0 +1,15 @@
+<div class="container">
+
+<h3>Create a new task</h3>
+
+  <%= form_for(@task) do |f| %>
+    <%= f.label :title, class: "form-group" %>
+    <%= f.text_field :title, class: "form-control" %>
+    <br>
+    <br>
+    <%= f.label :details, class: "form-group" %>
+    <%= f.text_field :details, class: "form-control" %>
+    <br>
+    <%= f.submit class: "btn btn-success"  %>
+  <% end %>
+</div>

@@ -1,0 +1,12 @@
+<h2><%= @task.title %></h2>
+<p><%= @task.details %></p>
+<br>
+<p><input type="checkbox"> This task is not complete yet.</p>
+<br>
+<br>
+<div class="d-flex justify-content-center">
+  <p><%= link_to "EDIT", edit_path(@task.id), class: "btn btn-primary mr-2" %></p>
+  <p><%= link_to 'DELETE', task_path(@task.id), method: :delete, class: "btn btn-danger", data: { confirm: "Are you sure?" } %></p>
+</div>
+<br>
+<p><%= link_to "Back to list", root_path %></p>
